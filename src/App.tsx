@@ -26,7 +26,7 @@ export const App =()=>{
 
       </div>
       <div id="inicio" onMouseEnter={()=>setSeccionActual("inicio")}>
-        <img id="inicio__img" src="/src/assets/fotoperfil.jpg"></img>
+        <img id="inicio__img" src="/public/assets/fotoperfil.jpg"></img>
         <div id="inicio__titulo">
           <h4>¡Hola!</h4>
           <h2 id="inicio__h2">Mi nombre es Diego N. Iocco</h2>

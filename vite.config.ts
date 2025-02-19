@@ -8,4 +8,7 @@ export default defineConfig({
   plugins: [
     react(),
   ],
+  build: {
+    outDir: "dist", // O cualquier otro directorio donde se exporten los archivos
+  }
 })
