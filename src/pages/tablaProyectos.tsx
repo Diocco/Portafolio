@@ -114,12 +114,12 @@ export const Mobile=()=>{
                     </div>
                 </div>
                 <div>
-                    <img className="tablaProyectos__img" src='../src/images/inicioSesionMobile.png'></img>
-                    <img className="tablaProyectos__img" src='../src/images/inicioSesionMobile2.png'></img>
+                    <img className="tablaProyectos__img" src='/images/inicioSesionMobile.png'></img>
+                    <img className="tablaProyectos__img" src='/images/inicioSesionMobile2.png'></img>
                 </div>
             </div>
             <div className="tablaProyectos__captura">
-                <img className="tablaProyectos__img" src='../src/images/productosMobile.png'></img>
+                <img className="tablaProyectos__img" src='/images/productosMobile.png'></img>
                 <div className="tablaProyectos__contenedor-div">
                     <div className="tablaProyectos__contenedor__contenido-tituloIcono">
                         <FontAwesomeIcon icon={faBars} className="tablaProyectos__contenedor__contenido-icon"/>
@@ -142,7 +142,7 @@ export const Mobile=()=>{
             <div className="tablaProyectos__captura">
                 <div className="tablaProyectos__contenedor-div">
                     <div className="tablaProyectos__contenedor__contenido-tituloIcono">
-                        <FontAwesomeIcon icon={faBasketShopping} className="tablaProyectos__contenedor__contenido-icon"/>
+                        <FontAwesomeIcon icon={faPencil} className="tablaProyectos__contenedor__contenido-icon"/>
                         <h2 className="tablaProyectos__contenedor__contenido-h2">Modificación de productos</h2>
                     </div>
                     <div className="tablaProyectos__contenedor__parrafo">
@@ -154,14 +154,14 @@ export const Mobile=()=>{
                         <p><strong> Gestión de imágenes:</strong> Permite añadir, eliminar o cambiar imágenes del producto.</p> 
                     </div>
                     <div className="tablaProyectos__contenedor__parrafo">
-                        <FontAwesomeIcon className="tablaProyectos__contenedor__parrafo-icon2" icon={faPencil} />   
+                        <FontAwesomeIcon className="tablaProyectos__contenedor__parrafo-icon2" icon={faCaretUp} />   
                         <p><strong> Control de variantes y especificaciones:</strong> Se pueden agregar, modificar o eliminar especificaciones o variantes con sus respectivas características .</p> 
                     </div>
                 </div>
                 <div>
-                    <img className="tablaProyectos__img" src='../src/images/productoMobile.png'></img>
-                    <img className="tablaProyectos__img" src='../src/images/productoMobile2.png'></img>
-                    <img className="tablaProyectos__img" src='../src/images/productoMobile3.png'></img>
+                    <img className="tablaProyectos__img" src='/images/productoMobile.png'></img>
+                    <img className="tablaProyectos__img" src='/images/productoMobile2.png'></img>
+                    <img className="tablaProyectos__img" src='/images/productoMobile3.png'></img>
                 </div>
             </div>
         </div>
@@ -220,10 +220,10 @@ export const Pagina=()=>{
                         <p><strong> Categorías destacadas:</strong> En esta sección, se presentan distintas categorías de productos, facilitando el acceso inicial a las opciones más populares.</p> 
                     </div>
                 </div>
-                <img className="tablaProyectos__img" src='../src/images/inicioPagina.png'></img>
+                <img className="tablaProyectos__img" src='/images/inicioPagina.png'></img>
             </div>
             <div className="tablaProyectos__captura">
-                <img className="tablaProyectos__img" src='../src/images/inicioSesion.png'></img>
+                <img className="tablaProyectos__img" src='/images/inicioSesion.png'></img>
                 <div className="tablaProyectos__contenedor-div">
                     <div className="tablaProyectos__contenedor__contenido-tituloIcono">
                         <FontAwesomeIcon icon={faRightToBracket} className="tablaProyectos__contenedor__contenido-icon"/>
@@ -254,10 +254,10 @@ export const Pagina=()=>{
                         <p><strong> Visualización de productos:</strong> Cada producto se presenta con imágenes, nombre, precio y otras características relevantes.</p> 
                     </div>
                 </div>
-                <img className="tablaProyectos__img" src='../src/images/catalogo.png'></img>
+                <img className="tablaProyectos__img" src='/images/catalogo.png'></img>
             </div>
             <div className="tablaProyectos__captura">
-                <img className="tablaProyectos__img" src='../src/images/producto.png'></img>
+                <img className="tablaProyectos__img" src='/images/producto.png'></img>
                 <div className="tablaProyectos__contenedor-div">
                     <div className="tablaProyectos__contenedor__contenido-tituloIcono">
                         <FontAwesomeIcon icon={faCircleInfo} className="tablaProyectos__contenedor__contenido-icon"/>
@@ -284,7 +284,7 @@ export const Pagina=()=>{
                         <p><strong>  Guardar para más tarde:</strong> Los usuarios pueden agregar productos a su lista de deseos para acceder a ellos fácilmente en otra ocasión, sin necesidad de buscarlos nuevamente.</p> 
                     </div>
                 </div>
-                <img className="tablaProyectos__img" src='../src/images/deseados.png'></img>
+                <img className="tablaProyectos__img" src='/images/deseados.png'></img>
             </div>
         </div>
     </>)
