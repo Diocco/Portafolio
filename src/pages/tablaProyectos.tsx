@@ -1,7 +1,6 @@
 
 import { faBars, faBasketShopping, faBolt, faCaretUp, faCircleInfo, faGear, faGem, faHeart, faHouse, faPencil, faRightToBracket } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { useState } from "react"
 import { Tecnologia } from "../components/tsx/tecnologia"
 
 
