@@ -292,7 +292,6 @@ export const Pagina=()=>{
 }
 
 export const TablaProyectos =({proyectoActivo,setProyectoActivo}:{proyectoActivo:string,setProyectoActivo: React.Dispatch<React.SetStateAction<string>>})=>{
-    const [visible,setVisible] = useState(false)
 
     return(
         <>
