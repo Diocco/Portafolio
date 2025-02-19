@@ -1,0 +1,162 @@
+
+#proyectos{
+  display: grid;
+  grid-template-rows: min-content max-content;
+  grid-template-columns: 700px 700px;
+  width: 100%;
+  height: 100%;
+  background: #030011;
+  align-items: center;
+  justify-content: center;
+  padding-top: 120px;
+}
+
+#proyectos__titulo{
+  margin: auto;
+  grid-column: 1/3;
+  padding-bottom: 20px;
+}
+
+#proyectos__h3{
+  color: var(--letraSecundario);
+}
+
+#proyectos__p{
+  margin-top: 5px;
+  width: 950px;
+}
+
+.proyectos__proyecto-titulo{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.proyectos__proyecto-span{
+  margin-left: 10px;
+  color: var(--letraInactiva);
+}
+
+.proyecto-div{
+  transition: color 0.2s;
+  color:var(--letra);
+  width: 550px;
+  margin: 10px;
+}
+.proyecto-div-inactivo{
+  transition: color 0.2s;
+  color:var(--letraInactiva);
+}
+
+
+/*Sistema solar*/
+.sistemaOrbita{
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: 600px;
+  justify-content: center;
+  align-items: center;
+  justify-self: end;
+  background: radial-gradient(circle, var(--fondo1) 10%, var(--fondo2) 50%)
+}
+
+.orbita{
+    position: absolute;
+    border: 2px solid white;
+    border-radius: 100%;
+  }
+  
+  .planeta{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: var(--boton2);
+  }
+  
+  @keyframes orbitar {
+    0% {
+      transform: rotate(0);
+    }
+    50%{
+      transform: rotate(180deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+  
+  .stopOrbitar{
+    animation-play-state: paused !important; /* Se pausa al pasar el mouse */
+  }
+  
+  .orbita0{
+    border: 0;
+    z-index: 1000;
+  }
+  
+  .orbita1{
+    width: 150px;
+    height: 150px;
+    padding: 0px;
+    animation: orbitar 10s linear infinite;
+    z-index: 900;
+  }
+  .planeta1{
+    animation: orbitar 10s linear infinite reverse;
+  }
+  
+  .orbita1{
+    width: 150px;
+    height: 150px;
+    padding: 0px;
+    animation: orbitar 10s linear infinite;
+    z-index: 800;
+  }
+  .planeta1{
+    animation: orbitar 10s linear infinite reverse;
+  }
+  
+  .orbita2{
+    width: 250px;
+    height: 250px;
+    padding: 12px;
+    animation: orbitar 20s linear infinite;
+    z-index: 700;
+  }
+  
+  .planeta2{
+    animation: orbitar 20s linear infinite reverse;
+  }
+  
+  .orbita3{
+    width: 380px;
+    height: 380px;
+    padding: 30px;
+    animation: orbitar 30s linear infinite;
+    z-index: 600;
+  }
+  
+  .planeta3{
+    animation: orbitar 30s linear infinite reverse;
+  }
+  
+  .orbita4{
+    width: 500px;
+    height: 500px;
+    padding: 47px;
+    animation: orbitar 40s linear infinite;
+    z-index: 500;
+  }
+  
+  .planeta4{
+    animation: orbitar 40s linear infinite reverse;
+  }
+  
+  
+  
+  

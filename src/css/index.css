@@ -1,0 +1,135 @@
+
+
+@import "./normalize.css";
+@import "./proyectos.css";
+@import "./encabezado.css";
+@import "./inicio.css";
+@import "./tablaProyectos.css";
+@import "./sobremi.css";
+@import "./contacto.css";
+
+
+:root{
+  --fondo1: #000431;
+  --fondo2: #030011;
+  --fondoElemento: #093779;
+  --boton2: #2f00bd;
+  --boton: linear-gradient(to right, #3b009b 1%, #7724fd 80%);
+  --input: linear-gradient(to right, #2e2e2e 1%, #383838 99%);
+  --letra: white;
+  --letraSecundario: #1c2bcc;
+  --letraInactiva: #303352;
+}
+
+html{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body{
+  background-color: #1c1c1c;
+  color: white;
+  margin: 0;
+  font-family: system-ui;
+  background-color: var(--fondo2);
+}
+
+h4{
+  margin: 0;
+}
+
+#root{
+  display: flex;
+  
+  align-items: center;
+  justify-content: center;
+  flex-direction:column;
+  width: 1400px;
+  margin: auto;
+}
+
+
+
+
+.botonGeneral,.botonGeneral2, .botonGeneral-desactivado,.botonGeneral-exitoso,.botonGeneral-error{
+  background: transparent;
+  font-size: 20px;
+  padding: 5px 5px;
+  margin: 23px;
+  border: 0px;
+  border-radius: 14px;
+  cursor: pointer;
+  color: var(--letra);
+  transition: transform 0.1s;
+}
+.botonGeneral2{
+  padding: 5px 7px 7px 7px;
+  margin: 23px;
+  border: 2px solid var(--letraSecundario);
+  border-radius: 5px;
+}
+
+.botonGeneral3,.botonGeneral4{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: 25px;
+  font-size: 15px;
+  width: max-content;
+  color: var(--letra);
+  background-color: var(--letraSecundario);
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  transition: filter 0.3s, transform 0.3s;
+}
+
+.botonGeneral4{
+  width: 300px;
+  padding: 15px 15px;
+}
+
+.botonGeneral3:hover,.botonGeneral4:hover{
+  transform: scale(1.1);
+  filter: brightness(1.1);
+}
+
+.botonGeneral4__div-titulo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.botonGeneral4__titulo{
+  margin-left: 10px;
+}
+
+.botonGeneral:hover{
+  filter:brightness(0.8)
+}
+.botonGeneral:active{
+  filter:brightness(0.6);
+  transform: scale(0.90);
+}
+
+.botonGeneral-desactivado{
+  filter:brightness(0.5);
+}
+
+.botonGeneral-exitoso{
+  background-color: green;
+}
+.botonGeneral-error{
+  background-color: red;
+}
+.botonGeneral-activo{
+  border-bottom: 1px solid var(--letraSecundario) ;
+  border-radius: 0;
+}
+
+
+
+.optionGeneral{
+  background-color: var(--fondo);
+}
+
