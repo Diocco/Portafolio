@@ -3,13 +3,13 @@ import "../css/tecnologia.css"
 export const Tecnologia =({index}:{index:number})=>{
 
     const imagenes=[
-        "public/assets/htmlIcono.png",
-        "public/assets/cssIcono.png",
-        "public/assets/jsIcono.png",
-        "public/assets/tsicono.png",
-        "public/assets/nodeIcono.png",
-        "public/assets/reactIcono.png",
-        "public/assets/mongodbIcono.webp",
+        "assets/htmlIcono.png",
+        "assets/cssIcono.png",
+        "assets/jsIcono.png",
+        "assets/tsicono.png",
+        "assets/nodeIcono.png",
+        "assets/reactIcono.png",
+        "assets/mongodbIcono.webp",
     ]
 
     return(

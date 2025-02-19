@@ -29,6 +29,6 @@ export const Sobremi =()=>{
             <Tecnologia index={5}/>
             <Tecnologia index={6}/>
         </div>
-        <a className="sobremi__informacion-descargar botonGeneral2" href="public/assets/CV_Diego_Iocco.pdf" download="CV_Diego_Iocco.pdf">Descargar CV</a>
+        <a className="sobremi__informacion-descargar botonGeneral2" href="assets/CV_Diego_Iocco.pdf" download="CV_Diego_Iocco.pdf">Descargar CV</a>
     </>)
 }
