@@ -71,7 +71,7 @@ export const Proyectos =()=>{
                 <div className="proyectos__proyecto-titulo">
                     <h3>Registener - App Escritorio</h3>
                 </div>
-                <p>Aplicación de escritorio destinada a administradores y empleados, que facilita la creación y modificación de productos, ventas presenciales, arqueos de caja, control de ingresos/egresos y estadísticas de ventas.</p>
+                <p>Aplicación de escritorio destinada a administradores y empleados, que facilita la creación y modificación de productos, ventas presenciales, arqueos de caja, control de ingresos, egresos y estadísticas de ventas.</p>
             </div>
             <div className={`proyecto-div ${verProyecto ? (verProyecto!=="pedidos" ? "proyecto-div-inactivo" : ""):""}`}>
                 <div className="proyectos__proyecto-titulo">

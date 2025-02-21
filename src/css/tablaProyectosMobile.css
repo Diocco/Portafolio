@@ -12,7 +12,7 @@
     background-color: var(--fondo1);
     font-size: 15px;
     margin: 2vw;
-    padding: 20px 5px 10px 20px;
+    padding: 20px 10px 10px 20px;
     border-radius: 20px;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -38,6 +38,10 @@
 .tablaProyectosMobile__h3{
     width: 100%;
     margin-bottom: 5px;
+}
+
+.tablaProyectosMobile__p{
+    width: 100%;
 }
 
 #ventanaEmergenteProyecto {
