@@ -12,3 +12,9 @@
     background-color: var(--fondo2);
     z-index: 10000;
 }
+
+@media (max-width:500px){
+    #encabezado{
+        display: none;
+    }
+}

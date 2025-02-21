@@ -31,3 +31,13 @@
 .sobremi__informacion__p{
     margin-bottom: 15px;
 }
+
+@media (max-width:500px){
+    #sobremi{
+        display: none;
+        width: 1150px;
+        grid-template-columns: 50% 50%;
+        padding: 50px 0px;
+        scroll-margin-top: 100px;
+    }
+}

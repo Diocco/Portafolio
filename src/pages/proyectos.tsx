@@ -1,8 +1,9 @@
 
 import { faCartShopping, faDesktop, faGlobe, faMobile, faServer, IconDefinition } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { TablaProyectos } from './tablaProyectos';
+import { TablaProyectosMobile } from './tablaProyectosMobile';
 
 
 const Orbita=({index,verProyecto,setVerProyecto,fontIcon,nombre,setProyectoActivo}:{index:number,verProyecto:string|undefined,setVerProyecto: React.Dispatch<React.SetStateAction<string | undefined>>,fontIcon: IconDefinition,nombre:string,setProyectoActivo: React.Dispatch<React.SetStateAction<string>>})=>{
@@ -27,6 +28,16 @@ export const Proyectos =()=>{
 
     const [verProyecto, setVerProyecto] = useState<string|undefined>(undefined)
     const [proyectoActivo, setProyectoActivo ] = useState("servidor")
+    const [esMobil, setEsMobil] = useState(document.documentElement.clientWidth>500)
+
+    useEffect(()=>{
+        window.addEventListener('resize',()=>setEsMobil((document.documentElement.clientWidth)>500))
+        return () => {
+            window.removeEventListener("resize", ()=>setEsMobil((document.documentElement.clientWidth)>500));
+        };
+    },[])
+    
+    
 
     return (
     <>
@@ -42,7 +53,7 @@ export const Proyectos =()=>{
             <Orbita index={3} verProyecto={verProyecto} setVerProyecto={setVerProyecto} fontIcon={faCartShopping}  nombre="pedidos"     setProyectoActivo={setProyectoActivo}  />
             <Orbita index={4} verProyecto={verProyecto} setVerProyecto={setVerProyecto} fontIcon={faGlobe}         nombre="pagina"      setProyectoActivo={setProyectoActivo}  />
         </div>
-        <div>
+        <div id="proyectos__descripciones">
             <div className={`proyecto-div ${verProyecto ? (verProyecto!=="servidor" ? "proyecto-div-inactivo" : ""):""}`}>
                 <div className="proyectos__proyecto-titulo">
                     <h3>API Rest</h3>
@@ -77,6 +88,9 @@ export const Proyectos =()=>{
                 <p>Plataforma de ecommerce orientada a la venta de productos en línea, integrando todas las funcionalidades del ecosistema para ofrecer una experiencia de compra completa y segura.</p>
             </div>
         </div>
-        <TablaProyectos proyectoActivo={proyectoActivo} setProyectoActivo={setProyectoActivo} />
+        {esMobil
+                ?<TablaProyectos proyectoActivo={proyectoActivo} setProyectoActivo={setProyectoActivo} />
+                :<TablaProyectosMobile/>
+        }
     </>)   
 }

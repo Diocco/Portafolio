@@ -35,3 +35,39 @@
     padding-top: 5px;
     width:  400px;
   }
+
+  @media (max-width:500px){
+    #inicio {
+      display: flex;
+      padding: 6vw;
+      height: 100vh;
+      width: 100vw;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin: 0;
+    }
+    #inicio__img {
+      width: 200px;
+      height: 200px;
+      margin: 0;
+    }
+    #inicio__titulo {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+    }
+    #inicio__h4{
+      font-size: 19px;
+    }
+    #inicio__h2{
+      font-size: 35px;
+      width:  initial;
+    }
+    #inicio__h3{
+      width:  initial;
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  

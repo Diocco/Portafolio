@@ -1,0 +1,63 @@
+#TablaProyectosMobile{
+    display: grid;
+    grid-template-columns: min-content min-content;
+    grid-auto-rows: 1fr;
+}
+
+.tablaProyectosMobile__tarjeta {
+    display: flex;
+    flex-direction: row;
+    width: 40vw;
+    height: calc(100% - 4vw);
+    background-color: var(--fondo1);
+    font-size: 15px;
+    margin: 2vw;
+    padding: 20px 5px 10px 20px;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+
+.tablaProyectosMobile__icono,.tablaProyectosMobile__flecha{
+    font-size: 30px;
+    color:var(--letraSecundario);
+    margin-bottom: 15px;
+    
+}
+.tablaProyectosMobile__flecha{
+    color:var(--letraInactiva);
+    margin-right: 15px;
+}
+.tablaProyectosMobile__flecha-volver{
+    transform: rotate(180deg);
+    width: 35px;
+    height: 35px;
+}
+
+.tablaProyectosMobile__h3{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+#ventanaEmergenteProyecto {
+    position: fixed;
+    background: var(--fondo1);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 10000000;
+    padding: 6vw;
+    animation: aparecer .3s;
+    overflow-y: auto;
+}
+
+@keyframes aparecer {
+    0% {
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}

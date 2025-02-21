@@ -132,3 +132,45 @@
     grid-column: 1/3;
     justify-content: space-around;
 }
+
+@media (max-width:500px){
+    .tablaProyectos__contenedor{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+    .tablaProyectos__contenedor-div{
+        font-size: 20px;
+        width: 100%;
+        margin: 15px 0;
+        grid-column: 1/3;
+
+    }
+    .tablaProyectos__tecnologias{
+        width: max-content;
+        padding: 0 20px;
+    }
+    .tablaProyectos__contenedor__contenido-tituloIcono{
+        text-align: center;
+    }
+    .tablaProyectos__contenedor__parrafo-icon2 {
+        margin-top: 3px;
+        transform: rotate(90deg) translateY(5px);
+    }
+    .tablaProyectos__contenedor__parrafo-icon {
+        margin-top: 3px;
+        transform: translateX(-5px);
+    }
+    .tablaProyectos__captura {
+        display: flex;
+        flex-direction: column;
+    }
+    .tablaProyectos__img {
+        order: 1000;
+        margin: 6px;
+    }
+    .tablaProyectos__contenedor-iframe {
+        width: 100%;
+    }
+}

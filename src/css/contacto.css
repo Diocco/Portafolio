@@ -13,3 +13,19 @@
     width: 500px;
     text-align: center;
 }
+
+@media (max-width:500px){
+    #contacto{
+        width: 94vw ;
+        margin: 6vw;
+        padding: 20px;
+        font-size: 20px;
+    }
+    .contacto__p{
+        width: 100%;
+        text-align: center;
+        margin: 5px 0 10px 0;
+        font-size: 15px;
+    }
+    
+}

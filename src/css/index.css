@@ -5,6 +5,7 @@
 @import "./encabezado.css";
 @import "./inicio.css";
 @import "./tablaProyectos.css";
+@import "./tablaProyectosMobile.css";
 @import "./sobremi.css";
 @import "./contacto.css";
 
@@ -40,14 +41,15 @@ h4{
 
 #root{
   display: flex;
-  
   align-items: center;
   justify-content: center;
   flex-direction:column;
-  width: 1400px;
   margin: auto;
 }
 
+.scrollDesactivado{
+  overflow: hidden;
+}
 
 
 
@@ -131,5 +133,29 @@ h4{
 
 .optionGeneral{
   background-color: var(--fondo);
+}
+
+
+
+@media (max-width:500px){
+  .botonGeneral, .botonGeneral2, .botonGeneral-desactivado, .botonGeneral-exitoso, .botonGeneral-error {
+    font-size: 19px;
+    padding: 10px;
+    margin: 3px;
+    border: 0px;
+    border-radius: 11px;
+    background: white;
+    color: black;
+  }
+
+  .botonGeneral3, .botonGeneral4 {
+    padding: 10px;
+    margin-top: 9px;
+    font-size: 19px;
+    align-self: center;
+    border-radius: 11px;
+  }
+
+
 }
 

@@ -28,8 +28,8 @@ export const App =()=>{
       <div id="inicio" onMouseEnter={()=>setSeccionActual("inicio")}>
         <img id="inicio__img" src="/assets/fotoperfil.jpg"></img>
         <div id="inicio__titulo">
-          <h4>¡Hola!</h4>
-          <h2 id="inicio__h2">Mi nombre es Diego N. Iocco</h2>
+          <h4 id="inicio__h4">¡Hola!</h4>
+          <h2 id="inicio__h2">Mi nombre es Diego Iocco</h2>
           <h4 id="inicio__h3">Soy desarollador Fullstack Jr y Estudiante de Ingeniería en Sistemas de la informacion</h4>
           <a href='#proyectos' className='botonGeneral3'>Mis proyectos</a>
         </div>

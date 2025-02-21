@@ -65,17 +65,21 @@
     position: absolute;
     border: 2px solid white;
     border-radius: 100%;
+    pointer-events: none
   }
   
   .planeta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 50px;
     height: 50px;
     border-radius: 100%;
     text-align: center;
-    padding: 10px;
     font-size: 25px;
     cursor: pointer;
     background-color: var(--boton2);
+    pointer-events: auto;
   }
   
   @keyframes orbitar {
@@ -159,4 +163,65 @@
   
   
   
+@media (max-width:500px){
+  .sistemaOrbita{
+    height: initial;
+    margin: 100px 0;
+  }
+  #proyectos__descripciones{
+    display: none;
+  }
+  #proyectos{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: initial;
+    margin-top: 100px;
+    padding: 6vw;
+
+  }
+  #proyectos__titulo {
+
+    font-size: 20px;
+    width: initial;
+  }
+  #proyectos__p {
+    margin-top: 10px;
+    width: initial;
+  }
+  .planeta {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    pointer-events: none
+  }
   
+  .orbita1,.orbita2,.orbita3,.orbita4 {
+    width: 150px;
+    height: 150px;
+    padding: 0;
+    border: 0;
+    animation: orbitar 10s linear infinite;
+  }
+  .orbita4{
+    border: 2px solid white;
+  }
+
+  .planeta2 {
+    position: absolute;
+    right: 0;
+    animation: orbitar 10s linear infinite reverse;
+  }
+
+  .planeta3 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    animation: orbitar 10s linear infinite reverse;
+  }
+  .planeta4 {
+    position: absolute;
+    bottom: 0;
+    animation: orbitar 10s linear infinite reverse;
+  }
+}
