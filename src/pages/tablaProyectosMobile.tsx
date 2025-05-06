@@ -1,7 +1,7 @@
 import { faArrowRight, faCartShopping, faDesktop, faGlobe, faMobile, faServer } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { useState, useEffect } from 'react';
-import { Escritorio, Mobile, Pagina, Pedidos, Servidor } from "./tablaProyectos"
+import { Escritorio, Mobile, Pagina, empleados, Servidor } from "./tablaProyectos"
 
 
 
@@ -22,7 +22,7 @@ const VentanaEmergenteProyecto=({proyectoActivo,setProyectoActivo}:{proyectoActi
             {proyectoActivo==="servidor" && <Servidor />}
             {proyectoActivo==="mobile" && <Mobile />}
             {proyectoActivo==="escritorio" && <Escritorio />}
-            {proyectoActivo==="pedidos" && <Pedidos />}
+            {proyectoActivo==="empleados" && <empleados />}
             {proyectoActivo==="pagina" && <Pagina />}
     </div>)
 }
@@ -54,17 +54,17 @@ export const TablaProyectosMobile =()=>{
                     <h3 className="tablaProyectosMobile__h3">App Escritorio</h3>
                     <p  className="tablaProyectosMobile__p">Facilita la gestión de productos, ventas presenciales, arqueos de caja, ingresos, egresos y estadísticas.</p>
                 </div>
-                <div onClick={()=>setProyectoActivo("pedidos")} className="tablaProyectosMobile__tarjeta">
+                <div onClick={()=>setProyectoActivo("empleados")} className="tablaProyectosMobile__tarjeta">
                     <FontAwesomeIcon className="tablaProyectosMobile__icono" icon={faCartShopping} />
                                 <FontAwesomeIcon className="tablaProyectosMobile__flecha" icon={faArrowRight} />
-                    <h3 className="tablaProyectosMobile__h3">App Mobile de Pedidos</h3>
-                    <p  className="tablaProyectosMobile__p"> Permite realizar pedidos para retiro presencial.</p>
+                    <h3 className="tablaProyectosMobile__h3">App Mobile de empleados</h3>
+                    <p  className="tablaProyectosMobile__p"> Permite realizar empleados para retiro presencial.</p>
                 </div>
                 <div onClick={()=>setProyectoActivo("pagina")} className="tablaProyectosMobile__tarjeta">
                     <FontAwesomeIcon className="tablaProyectosMobile__icono" icon={faGlobe} />
                                 <FontAwesomeIcon className="tablaProyectosMobile__flecha" icon={faArrowRight} />
                     <h3 className="tablaProyectosMobile__h3">Página Web</h3>
-                    <p  className="tablaProyectosMobile__p"> Venta en línea con integración total del ecosistema.</p>
+                    <p  className="tablaProyectosMobile__p"> Venta en línea con integración total del entorno.</p>
                 </div>
             </div>
     </>

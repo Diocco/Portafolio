@@ -1,0 +1,31 @@
+.cartaAplicacion{
+    width: 300px;
+}
+
+.cartaAplicacion__encabezado{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 0px 0px 5px 4px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cartaAplicacion__encabezado > :first-child { /* Titulo */
+    font-size: 20px;
+}
+
+.cartaAplicacion__descripcion{
+    width: 100%;
+    padding: 7px;
+    background-color: var(--fondo1);
+    border-radius: 0 0 10px 10px;
+    justify-content: flex-end;
+}
+
+.cartaAplicacion__descripcion > :last-child { /* Tecnologias*/
+    display: flex;
+    width: 100%;
+    padding-top: 5px;
+    justify-content: flex-end;
+}

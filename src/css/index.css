@@ -8,6 +8,7 @@
 @import "./tablaProyectosMobile.css";
 @import "./sobremi.css";
 @import "./contacto.css";
+@import "./lineaTiempo.css";
 
 
 :root{
@@ -135,7 +136,11 @@ h4{
   background-color: var(--fondo);
 }
 
-
+#modalVivorita{
+  background-color: var(--fondo1);
+  border-radius: 20px;
+  padding: 20px;
+}
 
 @media (max-width:500px){
   .botonGeneral, .botonGeneral2, .botonGeneral-desactivado, .botonGeneral-exitoso, .botonGeneral-error {

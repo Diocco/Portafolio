@@ -2,7 +2,7 @@
 #proyectos{
   display: grid;
   grid-template-rows: min-content max-content;
-  grid-template-columns: 700px 700px;
+  grid-template-columns: 1fr minMax(700px, 1fr);
   width: 100%;
   height: 100%;
   background: #030011;
@@ -12,6 +12,7 @@
 }
 
 #proyectos__titulo{
+  display: none;
   margin: auto;
   grid-column: 1/3;
   padding-bottom: 20px;
@@ -48,10 +49,17 @@
   color:var(--letraInactiva);
 }
 
+#proyectos__descripciones{
+  display: none;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 1000px;
+  align-content: flex-start;
+}
 
 /*Sistema solar*/
 .sistemaOrbita{
-  display: flex;
+  display: none;
   flex-direction: column;
   width: 600px;
   height: 600px;
@@ -68,19 +76,19 @@
     pointer-events: none
   }
   
-  .planeta{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-    text-align: center;
-    font-size: 25px;
-    cursor: pointer;
-    background-color: var(--boton2);
-    pointer-events: auto;
-  }
+.planeta{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  background-color: var(--boton2);
+  pointer-events: auto;
+}
   
   @keyframes orbitar {
     0% {
